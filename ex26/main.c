@@ -8,3 +8,12 @@ int	is_empty(char *str)
 		return (1);
 	return (0);
 }
+
+int	main(void)
+{
+	char	*tab[] = {"ola", "", "42", "", 0};
+	int	result = ft_count_if(tab, &is_empty);
+
+	printf("%d\n", result);
+	return (0);
+}
