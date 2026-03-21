@@ -18,4 +18,9 @@ int	main(int argc, char **argv)
 		return (1);
 	}
 	fd = open(argv[1], O_RDONLY);
+	if (fd == -1)
+	{
+		write(2, "Connot read file.\n", 18);
+		return (1);
+	}
 }
