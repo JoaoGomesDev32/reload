@@ -24,4 +24,9 @@ int	main(int argc, char **argv)
 		return (1);
 	}
 	bytes = read(fd, buffer, 100);
+	while (bytes > 0)
+	{
+		write(1, buffer, bytes);
+		bytes = read(fd, buffer, 100);
+	}
 }
