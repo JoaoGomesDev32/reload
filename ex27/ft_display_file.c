@@ -23,4 +23,5 @@ int	main(int argc, char **argv)
 		write(2, "Connot read file.\n", 18);
 		return (1);
 	}
+	bytes = read(fd, buffer, 100);
 }
