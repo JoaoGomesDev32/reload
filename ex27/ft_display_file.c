@@ -29,4 +29,6 @@ int	main(int argc, char **argv)
 		write(1, buffer, bytes);
 		bytes = read(fd, buffer, 100);
 	}
+	close(fd);
+	return (0);
 }
