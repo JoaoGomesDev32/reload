@@ -3,6 +3,17 @@
 
 int	main(void)
 {
+	int	i, vet[10] = {0,1,2,3,4,5,6,7,8,9};
+
+	// printf("%p\t%p\n", vet, &vet[0]);
+
+
+	for (i = 0; i < 10; i++)
+	{
+		printf("%d ", *(vet + i));
+	}
+
+	/*
 	int	*valor1, valor2 = 50;
 	char	*letra1, letra2 = 'g';
 
@@ -18,5 +29,7 @@ int	main(void)
 	printf("Endereço da variável letra2: %p\n", &letra2);
 	printf("Conteúdo da variável letra1: %p\n", letra1);
 	printf("Conteúdo apontado pela variável letra1: %c\n", *letra1);
+	*/
+
 	return (0);
 }
