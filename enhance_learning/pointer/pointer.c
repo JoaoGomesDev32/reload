@@ -21,6 +21,16 @@ void	imprimirVetorLetras(char *v, int tam)
 	printf("\n");
 }
 
+void preencherVetorInt(int *v, int tam)
+{
+	int	i;
+	for (i = 0; i < tam; i++)
+	{
+		printf("Digite um valor qualquer: ");
+		scanf("%d", v + i);
+	}
+}
+
 int	main(void)
 {
 	int	i, vet[10] = {0,2,4,6,8,10,12,14,16,18};
@@ -28,6 +38,7 @@ int	main(void)
 
 	// printf("%p\t%p\n", vet, &vet[0]);
 
+	preencherVetorInt(vet, 10);
 	imprimirVetor(vet, 10);
 	imprimirVetorLetras(letras, 10);
 
