@@ -1,18 +1,29 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+void	imprimirVetor(int *v, int tam)
+{
+	int	i;
+	for (i = 0; i < tam; i++)
+	{
+		printf("%d ", *(v + i));
+	}
+}
+
 int	main(void)
 {
-	int	i, vet[10] = {0,1,2,3,4,5,6,7,8,9};
+	int	i, vet[10] = {0,2,4,6,8,10,12,14,16,18};
 
 	// printf("%p\t%p\n", vet, &vet[0]);
 
+	imprimirVetor(vet, 10);
 
+/*
 	for (i = 0; i < 10; i++)
 	{
 		printf("%d ", *(vet + i));
 	}
-
+*/
 	/*
 	int	*valor1, valor2 = 50;
 	char	*letra1, letra2 = 'g';
