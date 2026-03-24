@@ -12,6 +12,11 @@ int	main(void)
 		scanf("%d", &num2[i]);
 	}
 
+	for(i = 0; i < 10; i++)
+	{
+		num2[i] = num2[i] * 3;
+	}
+
 	printf("\n\n");
 	for(i = 0; i < 10; i++)
 	{
