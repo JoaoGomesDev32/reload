@@ -24,7 +24,7 @@ int	main(void)
 	}
 	printf("\n\n");
 
-	/*
+
 	int	i;
 	int	num2[] = {1,5,9,15,43};
 	char	vogais[5] = {'a','e','i','o','u'};
@@ -59,6 +59,6 @@ int	main(void)
 	char	vogais[5] = {'a','e','i','o','u'};
 
 	float	notas[3] = {7.5,8.3,9.5};
-	*/
+
 	return (0);
 }
